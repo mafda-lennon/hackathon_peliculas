@@ -41,12 +41,12 @@ document.getElementById('searchBtn').addEventListener('click', function(){
                document.getElementById("container").innerHTML +=
                `<div class="bestResult">
                <img class="poster" src=${data.Poster}>
-               <p class="runtime"><strong>Duración:</strong> ${data.Runtime}</p>
+               <div class="infoContainer"><p class="runtime"><strong>Duración:</strong> ${data.Runtime}</p>
                <h2 class="title">${data.Title}</h2>
                <p class="plot"><strong>Argumento:</strong> ${data.Plot}</p>
                <p class="actors"><strong>Reparto:</strong> ${data.Actors}</p>
                <p class="genre">${data.Genre}</p>
-               <button value="Refresh Page" onClick="window.location.href=window.location.href">Volver</button>
+               <button value="Refresh Page" onClick="window.location.href=window.location.href">Volver</button></div>
                </div>`
            })
        })
@@ -74,11 +74,12 @@ bestRated.addEventListener('click', showBestRated);
             document.getElementById("container").innerHTML +=
             `<div class="bestResult">
             <img class="poster" src=${data.Poster}>
+            <div class="infoContainer"><p class="runtime"><strong>Duración:</strong> ${data.Runtime}</p>
             <h2 class="title">${data.Title}</h2>
             <p class="plot"><strong>Reseña: </strong>${data.Plot}</p>
             <p class="actors"><strong>Protagonistas: </strong>${data.Actors}</p>
             <p class="genre"><strong>Género: </strong>${data.Genre}</p>
-            <p class="ratins"><strong>Evaluación de críticos: </strong>${data.imdbRating}</p>
+            <p class="ratins"><strong>Evaluación de críticos: </strong>${data.imdbRating}</p></div>
             <br>
             </div>`
         })
@@ -100,11 +101,12 @@ mostVoted.addEventListener('click', showMostVoted);
             document.getElementById("container").innerHTML +=
             `<div class="bestResult">
             <img class="poster" src=${data.Poster}>
+            <div class="infoContainer"><p class="runtime"><strong>Duración:</strong> ${data.Runtime}</p>
             <h2 class="title">${data.Title}</h2>
             <p class="plot"><strong>Reseña: </strong>${data.Plot}</p>
             <p class="actors"><strong>Protagonistas: </strong>${data.Actors}</p>
             <p class="genre"><strong>Género: </strong>${data.Genre}</p>
-            <p class="votes"><strong>Recomendaciones del público: </strong>${data.imdbVotes}</p>
+            <p class="votes"><strong>Recomendaciones del público: </strong>${data.imdbVotes}</p></div>
             <br>
             </div>`
         })
@@ -128,11 +130,12 @@ awards.addEventListener('click', showMostAwards);
             document.getElementById("container").innerHTML +=
             `<div class="bestResult">
             <img class="poster" src=${data.Poster}>
+            <div class="infoContainer"><p class="runtime"><strong>Duración:</strong> ${data.Runtime}</p>
             <h2 class="title">${data.Title}</h2>
             <p class="plot"><strong>Reseña: </strong>${data.Plot}</p>
             <p class="actors"><strong>Protagonistas: </strong>${data.Actors}</p>
             <p class="genre"><strong>Género: </strong>${data.Genre}</p>
-            <p class="awards"><strong>Premios y nominaciones: </strong>${data.Awards}</p>
+            <p class="awards"><strong>Premios y nominaciones: </strong>${data.Awards}</p></div>
             <br>
             </div>
             `
