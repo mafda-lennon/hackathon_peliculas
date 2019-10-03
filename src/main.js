@@ -51,7 +51,7 @@ document.getElementById('searchBtn').addEventListener('click', function(){
                <p class="plot"><strong>Argumento:</strong> ${data.Plot}</p>
                <p class="actors"><strong>Reparto:</strong> ${data.Actors}</p>
                <p class="genre">${data.Genre}</p>
-               <button value="Refresh Page" onClick="window.location.href=window.location.href">Volver</button>
+               <button value="Refresh Page" onClick="window.location.href=window.location.href" class="filter-button" >Volver</button>
                </div>`
            })
        })

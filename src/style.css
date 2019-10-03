@@ -234,6 +234,9 @@ li{
     color: white;
 
     text-align: center;
+
+    outline-color: transparent;
+    outline-style: none;
 }
 
 
